@@ -227,7 +227,8 @@ button {
 
   color: var(--white-color);
   background-color: var(--primary-brand);
-  transition: color var(--primary-duration) var(--primary-timing-function);
+  transition: background-color var(--primary-duration)
+    var(--primary-timing-function);
 }
 /* BUTTON */
 
@@ -249,6 +250,8 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-brand);
   background-color: var(--cloud-color);
+  transition: background-color var(--primary-duration)
+    var(--primary-timing-function);
 }
 
 .button:hover,
@@ -439,7 +442,8 @@ button {
   align-items: center;
   margin-top: 24px;
   margin-right: 24px;
-  transition: color var(--primary-duration) var(--primary-timing-function);
+  transition: background-color var(--primary-duration)
+    var(--primary-timing-function);
 }
 .modal-icon {
   fill: var(--dark-color);
@@ -571,6 +575,8 @@ button {
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
+  transition: background-color var(--primary-duration)
+    var(--primary-timing-function);
 }
 .filter-list .button:hover,
 .button:focus {
@@ -603,6 +609,7 @@ button {
 }
 .portfolio-link {
   display: block;
+  transition: box-shadow var(--primary-duration) var(--primary-timing-function);
 }
 
 .portfolio-link:hover,
@@ -610,10 +617,8 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-item:hover .overlay {
-  transform: translateY(0);
-}
-.product-wrapper {
+
+.product-box {
   position: relative;
   overflow: hidden;
 }
@@ -622,15 +627,16 @@ button {
   top: 0;
   left: 0;
   transform: translateY(100%);
-
   width: 100%;
   height: 100%;
-
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
-
   background-color: var(--primary-brand);
+  transition: transform var(--primary-duration) var(--primary-timing-function);
+}
+.portfolio-item:hover .overlay {
+  transform: translateY(0);
 }
 .overlay-descr {
   font-weight: 400;
