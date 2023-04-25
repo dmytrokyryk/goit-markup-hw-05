@@ -252,7 +252,6 @@ button {
   letter-spacing: 0.04em;
   line-height: 1.5;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-brand);
   background-color: var(--cloud-color);
   transition-property: background-color;
@@ -631,8 +630,9 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
+  transform: translateY(0);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -657,9 +657,9 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-item:hover .overlay {
+/* .portfolio-item:hover .overlay {
   transform: translateY(0);
-}
+} */
 .overlay-descr {
   font-weight: 400;
   font-size: 16px;
